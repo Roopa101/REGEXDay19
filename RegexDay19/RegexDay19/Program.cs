@@ -12,9 +12,9 @@ namespace RegexDay19
         {
             Console.WriteLine("welcome to User Registration Program");
             Pattern pattern = new Pattern();
-            Console.WriteLine("Enter First Name");
-            string firstName = Console.ReadLine();
-            pattern.ValidateFirstName(firstName);
+            Console.WriteLine("Enter last Name");
+            string lastName = Console.ReadLine();
+            pattern.ValidateLastName(lastName);
             Console.ReadKey();
         }
     }

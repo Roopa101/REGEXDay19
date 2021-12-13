@@ -10,16 +10,16 @@ namespace RegexDay19
 {
     class Pattern
     {
-        public static string regex_firstName = "^[A-Z]{1}[a-z]{2,}$";
-        public void ValidateFirstName(string firstName)
+        public static string regex_lastName = "^[A-Za-z]{2,}[A-z]{1}$";
+        public void ValidateLastName(string lastName)
         {
-            if (Regex.IsMatch(firstName, regex_firstName).Equals(true))
+            if (Regex.IsMatch(lastName, regex_lastName).Equals(true))
             {
                 Console.WriteLine("Validation successfull");
             }
             else
             {
-                Console.WriteLine("Hint : First Name should start with capital letter and should have minimum three characters");
+                Console.WriteLine("Hint : Last Name should End with capital letter and should have minimum three characters");
             }
         }
     }
