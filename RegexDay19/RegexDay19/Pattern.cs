@@ -17,7 +17,7 @@ namespace RegexDay19
         {
             if (Regex.IsMatch(firstName, regex_firstName).Equals(true))
             {
-                Console.WriteLine("Validation successfull");
+                Console.WriteLine("Validation successfull.");
             }
             else
             {
@@ -28,7 +28,7 @@ namespace RegexDay19
         {
             if (Regex.IsMatch(lastName, regex_lastName).Equals(true))
             {
-                Console.WriteLine("Validation successfull");
+                Console.WriteLine("Validation successfull.");
             }
             else
             {

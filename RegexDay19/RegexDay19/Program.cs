@@ -10,7 +10,7 @@ namespace RegexDay19
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("welcome to User Registration Program");
+            Console.WriteLine("welcome to User Registration Program..");
             Pattern pattern = new Pattern();
             Console.WriteLine("Enter First Name");
             string firstName = Console.ReadLine();
