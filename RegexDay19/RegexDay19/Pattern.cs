@@ -12,7 +12,10 @@ namespace RegexDay19
     {
         public static string regex_firstName = "^[A-Z]{1}[a-z]{2,}$";
         public static string regex_lastName = "^[A-Z]{1}[a-z]{2,}$";
-        
+        public static string regex_email = "^[a-z0-9]+(.[a-z0-9]+)?@[a-z]+[.][a-z]{2,3}(.[a-z]{2})?$";
+        public static string regex_mobile = "^[1-9][0-9]{1,2}[ ][0-9]{10}";
+
+
         public void ValidateFirstName(string firstName)
         {
             if (Regex.IsMatch(firstName, regex_firstName).Equals(true))
@@ -35,6 +38,29 @@ namespace RegexDay19
                 Console.WriteLine("Hint : Last Name should starts with capital letter and should have minumim three characters");
             }
         }
-       
+        public void ValidateEmail(string email)
+        {
+            if (Regex.IsMatch(email, regex_email).Equals(true))
+            {
+                Console.WriteLine("Validation successfull");
+            }
+            else
+            {
+                Console.WriteLine("Hint : e.g abc.xyz@bl.co.in \nEmail has 3 mandatory parts (abc, bl,co) and 2 optional parts(xyz,in) precise @ and.positions");
+            }
+        }
+        public void ValidateMobile(string mobile)
+        {
+            if (Regex.IsMatch(mobile, regex_mobile).Equals(true))
+            {
+                Console.WriteLine("Validation successfull");
+            }
+            else
+            {
+                Console.WriteLine("Hint : Mobile Format - E.g. 91 9919819801 - Country code follow by space and 10 digit number");
+            }
+        }
     }
 }
+       
+    

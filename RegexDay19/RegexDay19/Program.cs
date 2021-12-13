@@ -18,7 +18,13 @@ namespace RegexDay19
             Console.WriteLine("Enter Last Name");
             string lastName = Console.ReadLine();
             pattern.ValidateLastName(lastName);
-           
+            Console.WriteLine("Enter Email");
+            string email = Console.ReadLine();
+            pattern.ValidateEmail(email);
+            Console.WriteLine("Enter Mobile number");
+            string mobile = Console.ReadLine();
+            pattern.ValidateMobile(mobile);
+
             Console.ReadKey();
         }
     }
