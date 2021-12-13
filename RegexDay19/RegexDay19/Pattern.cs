@@ -14,7 +14,7 @@ namespace RegexDay19
         public static string regex_lastName = "^[A-Z]{1}[a-z]{2,}$";
         public static string regex_email = "^[a-z0-9]+(.[a-z0-9]+)?@[a-z]+[.][a-z]{2,3}(.[a-z]{2})?$";
         public static string regex_mobile = "^[1-9][0-9]{1,2}[ ][0-9]{10}$";
-        public static string regex_passwordRule1 = "[a-zA-Z0-9]{8,}";
+        public static string regex_passwordRule1 = "^[a-zA-Z0-9]{8,}$";
 
 
 
