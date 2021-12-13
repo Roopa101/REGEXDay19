@@ -13,7 +13,9 @@ namespace RegexDay19
         public static string regex_firstName = "^[A-Z]{1}[a-z]{2,}$";
         public static string regex_lastName = "^[A-Z]{1}[a-z]{2,}$";
         public static string regex_email = "^[a-z0-9]+(.[a-z0-9]+)?@[a-z]+[.][a-z]{2,3}(.[a-z]{2})?$";
-        public static string regex_mobile = "^[1-9][0-9]{1,2}[ ][0-9]{10}";
+        public static string regex_mobile = "^[1-9][0-9]{1,2}[ ][0-9]{10}$";
+        public static string regex_passwordRule1 = "[a-zA-Z0-9]{8,}";
+
 
 
         public void ValidateFirstName(string firstName)
@@ -58,6 +60,17 @@ namespace RegexDay19
             else
             {
                 Console.WriteLine("Hint : Mobile Format - E.g. 91 9919819801 - Country code follow by space and 10 digit number");
+            }
+        }
+        public void ValidatePasswordRule1(string passwordrule1)
+        {
+            if (Regex.IsMatch(passwordrule1, regex_passwordRule1).Equals(true))
+            {
+                Console.WriteLine("Validation successfull");
+            }
+            else
+            {
+                Console.WriteLine("Hint : Password should be minimum 8 characters");
             }
         }
     }

@@ -24,6 +24,9 @@ namespace RegexDay19
             Console.WriteLine("Enter Mobile number");
             string mobile = Console.ReadLine();
             pattern.ValidateMobile(mobile);
+            Console.WriteLine("Enter Password");
+            string passwordrule1 = Console.ReadLine();
+            pattern.ValidatePasswordRule1(passwordrule1);
 
             Console.ReadKey();
         }
