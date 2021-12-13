@@ -32,7 +32,7 @@ namespace RegexDay19
             }
             else
             {
-                Console.WriteLine("Hint : Last Name should end with capital letter and should have minumim three characters");
+                Console.WriteLine("Hint : Last Name should starts with capital letter and should have minumim three characters");
             }
         }
         public void ValidateEmail(string email)
