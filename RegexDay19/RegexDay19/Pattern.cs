@@ -18,7 +18,7 @@ namespace RegexDay19
         public static string regex_passwordRule2 = "^(?=.*[A-Z])[A-Za-z0-9]{8,}$";
         public static string regex_passwordRule3 = "^(?=.*[A-Z])(?=.*[0-9])[a-zA-Z0-9]{8,}$";
         public static string regex_passwordRule4 = "^(?=.*[A-Z])(?=.*[0-9])(?=.+[!@#$%^&*])[a-zA-Z0-9]{8,}$";
-
+        public static string regex_emailsample = "^[\\w!#$%&'*+/=?`{|}~^-]+(?:\\.[\\w!#$%&'*+/=?`{|}~^-]+)*@(?:([0-9-]{1}|[a-zA-Z]{3,5})\\.)+[a-zA-Z]{2,3}";
         public void ValidateFirstName(string firstName)
         {
             if (Regex.IsMatch(firstName, regex_firstName).Equals(true))
@@ -106,6 +106,43 @@ namespace RegexDay19
             {
                 Console.WriteLine("Hint : Rule 1: Password should have minimum 8 characters\n Rule2:Password should have at least 1 Upper Case\n Rule3:Password should have atleast 1 Numeric number\n Rule4:Password should have exactly 1 special character");
             }
+        }
+        public void ValidateEmailSample(string emailsample)
+        {
+            if (Regex.IsMatch(emailsample, regex_emailsample).Equals(true))
+            {
+                Console.WriteLine("Validation successfull");
+            }
+            else
+            {
+                Console.WriteLine("Hint : enter a Valid email");
+            }
+            //Valid emails
+            //("abc@yahoo.com");
+            //("abc-100@yahoo.com");
+            //("abc.100@yahoo.com");
+            //("abc111@abc.com");
+            //("abc-100@abc.net");
+            //("abc.100@abc.com.au");
+            //("abc@1.com");
+            //("abc@gmail.com.com");
+            //("abc+100@gmail.com");
+
+            //Invalid emails
+            //("abc");
+            //("abc@.com.my");
+            //("abc123@gmail.a");
+            //("abc123@.com");
+            //("abc123@.com.com");
+            //(".abc@abc.com");
+            //("abc()*@gmail.com");
+            //("abc@%*.com");
+            //("abc..2002@gmail.com");
+            //("abc.@gmail.com");
+            //("abc@abc@gmail.com");
+            //("abc@gmail.com.1a");
+            //("abc@gmail.com.aa.au");
+
         }
     }
 }

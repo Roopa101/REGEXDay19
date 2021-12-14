@@ -36,6 +36,9 @@ namespace RegexDay19
             Console.WriteLine("Enter Password");
             string passwordrule4 = Console.ReadLine();
             pattern.ValidatePasswordRule4(passwordrule4);
+            Console.WriteLine("Enter email");
+            string emailsample = Console.ReadLine();
+            pattern.ValidateEmailSample(emailsample);
 
             Console.ReadKey();
         }
