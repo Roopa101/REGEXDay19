@@ -27,6 +27,9 @@ namespace RegexDay19
             Console.WriteLine("Enter Password");
             string passwordrule1 = Console.ReadLine();
             pattern.ValidatePasswordRule1(passwordrule1);
+            Console.WriteLine("Enter Password");
+            string passwordrule2 = Console.ReadLine();
+            pattern.ValidatePasswordRule2(passwordrule2);
 
             Console.ReadKey();
         }
